@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projeto.certimobi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Login" />
+        <activity android:name=".activity.Menu" />
+        <activity android:name=".activity.Questao" />
+        <activity android:name=".activity.Resultado" />
+        <activity android:name=".activity.Perfil"></activity>
+    </application>
+
+</manifest>

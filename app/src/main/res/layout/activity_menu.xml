@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context="projeto.certimobi.activity.Menu">
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="103dp"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/lg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <ImageView
+        android:id="@+id/logonome"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="-12dp"
+        app:layout_constraintTop_toBottomOf="@+id/logoimg"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:elevation="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logonome"
+        app:srcCompat="@drawable/perf" />
+
+    <TextView
+        android:id="@+id/txtPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="0dp"
+        android:text="PERFIL"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil" />
+
+    <ImageButton
+        android:id="@+id/btnSimulado"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:elevation="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logonome"
+        app:srcCompat="@drawable/sim" />
+
+    <TextView
+        android:id="@+id/txtSimul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="0dp"
+        android:text="SIMULAR"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimulado" />
+
+    <ImageButton
+        android:id="@+id/btnOpcao"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:elevation="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfil"
+        app:srcCompat="@drawable/ok" />
+
+    <TextView
+        android:id="@+id/txtopcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="0dp"
+        android:text="OPÇÕES"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpcao" />
+
+    <ImageButton
+        android:id="@+id/btnStatus"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:elevation="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSimul"
+        app:srcCompat="@drawable/opc" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="0dp"
+        android:text="STATUS"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStatus" />
+
+</android.support.constraint.ConstraintLayout>
